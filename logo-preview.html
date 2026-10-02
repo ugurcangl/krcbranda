@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>krcbranda logo</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #16323c;
+        --teal: #0b6f78;
+        --orange: #e1712b;
+        --paper: #f8fafc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: #eef3f4;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+      }
+
+      main {
+        width: min(980px, 100%);
+        display: grid;
+        gap: 28px;
+      }
+
+      .surface {
+        background: var(--paper);
+        border: 1px solid rgba(22, 50, 60, 0.12);
+        border-radius: 8px;
+        padding: clamp(24px, 5vw, 56px);
+      }
+
+      .logo {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      .tile {
+        min-height: 220px;
+        border-radius: 8px;
+        border: 1px solid rgba(22, 50, 60, 0.12);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .tile.dark {
+        background: var(--ink);
+      }
+
+      .mark {
+        width: min(180px, 72%);
+      }
+
+      .palette {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .swatch {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .chip {
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        border: 1px solid rgba(22, 50, 60, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="surface">
+        <img class="logo" src="assets/krcbranda-logo.svg" alt="krcbranda logo" />
+      </section>
+      <section class="grid">
+        <div class="tile">
+          <img class="mark" src="assets/krcbranda-mark.svg" alt="krcbranda ikon logo" />
+        </div>
+        <div class="tile dark">
+          <img class="logo" src="assets/krcbranda-logo-reverse.svg" alt="krcbranda logo koyu zemin" />
+        </div>
+      </section>
+      <section class="palette">
+        <span class="swatch"><span class="chip" style="background: #16323c"></span>#16323C</span>
+        <span class="swatch"><span class="chip" style="background: #0b6f78"></span>#0B6F78</span>
+        <span class="swatch"><span class="chip" style="background: #e1712b"></span>#E1712B</span>
+        <span class="swatch"><span class="chip" style="background: #f8fafc"></span>#F8FAFC</span>
+      </section>
+    </main>
+  </body>
+</html>
