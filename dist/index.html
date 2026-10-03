@@ -1,340 +1,94 @@
 <!doctype html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="KRC Branda; cadir, tente, semsiye ve gazebo sistemlerinde imalat, olcu alma, montaj ve servis cozumleri sunar."
-    />
-    <title>KRC Branda | Çadır, Tente, Şemsiye ve Gazebo Sistemleri</title>
-    <link rel="icon" href="assets/krcbranda-mark.svg" type="image/svg+xml" />
-    <link rel="preload" href="assets/hero-krcbranda.png" as="image" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="#anasayfa" aria-label="KRC Branda ana sayfa">
-        <img src="assets/krcbranda-logo.svg" alt="krcbranda" />
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="sr-only">Menüyü aç</span>
-      </button>
-      <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#anasayfa">Ana Sayfa</a>
-        <a href="#kurumsal">Kurumsal</a>
-        <div class="nav-dropdown">
-          <a href="#cozumler">Çözümler</a>
-          <div class="dropdown-menu">
-            <a href="cadir.html">Çadır</a>
-            <a href="tente.html">Tente</a>
-            <a href="branda.html">Branda</a>
-            <a href="semsiye.html">Şemsiye</a>
-            <a href="gazebo.html">Gazebo</a>
-            <a href="pergola.html">Pergola</a>
-          </div>
-        </div>
-        <a href="#projeler">Projelerimiz</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#iletisim">İletişim</a>
-        <a class="nav-cta" href="#iletisim">Teklif Al</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="KRC Branda — özel ölçü tente, pergola, çadır ve dış mekân çözümleri.">
+  <title>KRC Branda | Dış Mekâna Özel Çözümler</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141718'/%3E%3Cpath d='M13 39 32 17l19 22H13Zm8-2h22L32 24 21 37Z' fill='%23c8a46b'/%3E%3Cpath d='M18 43h28' stroke='%23f5f2eb' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <a class="brand" href="#top" aria-label="KRC Branda ana sayfa"><span class="brand-mark">K</span><span>KRC <b>BRANDA</b></span></a>
+    <nav class="desktop-nav" aria-label="Ana menü">
+      <a href="#top">Ana Sayfa</a><a href="#kurumsal">Kurumsal</a>
+      <div class="nav-drop"><button aria-expanded="false">Çözümler <span>⌄</span></button><div class="drop-menu"><a href="/cadir/">Çadır</a><a href="/tente/">Tente</a><a href="/branda/">Branda</a><a href="/semsiye/">Şemsiye</a><a href="/gazebo/">Gazebo</a><a href="/pergola/">Pergola</a></div></div>
+      <a href="#projeler">Projelerimiz</a><a href="#galeri">Galeri</a><a href="#iletisim">İletişim</a>
+    </nav>
+    <a class="header-cta" href="#iletisim">Teklif Al</a>
+    <button class="menu-toggle" aria-label="Menüyü aç" aria-expanded="false"><i></i><i></i></button>
+  </header>
+  <div class="mobile-menu" aria-hidden="true"><a href="#top">Ana Sayfa</a><a href="#kurumsal">Kurumsal</a><a href="#cozumler">Çözümler</a><a href="#projeler">Projelerimiz</a><a href="#galeri">Galeri</a><a href="#iletisim">İletişim</a></div>
 
-    <main id="anasayfa">
-      <section class="hero">
-        <img class="hero-image" src="assets/hero-krcbranda.png" alt="Tente, şemsiye ve gazebo sistemlerinin bulunduğu açık alan uygulaması" />
-        <div class="hero-overlay"></div>
-        <div class="hero-content" data-reveal>
-          <p class="eyebrow">İmalat, kurulum ve servis</p>
-          <h1>Yaşam alanlarınıza özel çözümler.</h1>
-          <p class="hero-copy">
-            Çadır, tente, branda, pergola ve dış mekân kapatma sistemlerinde ölçüye özel üretim, profesyonel kurulum ve premium uygulama kalitesi.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#iletisim">Teklif Al</a>
-            <a class="button secondary" href="#cozumler">Çözümleri İncele</a>
-          </div>
-        </div>
-        <div class="hero-panel" aria-label="Hizmet özeti" data-reveal>
-          <div>
-            <strong>Ölçüye özel üretim</strong>
-            <span>Keşif sonrası proje ve imalat</span>
-          </div>
-          <div>
-            <strong>Kurulum dahil</strong>
-            <span>Saha montajı ve servis desteği</span>
-          </div>
-        </div>
-      </section>
+  <main id="top">
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1755816764913-bd1104a26d78?auto=format&fit=crop&w=2400&q=85" alt="Modern bir yapıda pergola ve açık yaşam alanı">
+      <div class="hero-shade"></div>
+      <div class="hero-copy reveal"><p class="eyebrow light">Özel ölçü • Anahtar teslim</p><h1>Yaşam alanlarınıza<br><em>özel çözümler.</em></h1><p>Gölgeyi, konforu ve mimariyi bir araya getiren dış mekân sistemleri.</p><div class="hero-actions"><a class="btn gold" href="#cozumler">Çözümleri İncele</a><a class="btn ghost" href="#iletisim">Teklif Al</a></div></div>
+      <div class="hero-index"><span>01</span><div><i></i></div><span>04</span></div>
+      <a class="scroll-note" href="#cozumler"><span></span>Keşfet</a>
+    </section>
 
-      <section class="section intro" id="kurumsal" aria-labelledby="intro-title" data-reveal>
-        <div>
-          <p class="eyebrow">KRC Branda</p>
-          <h2 id="intro-title">Açık alanları daha kullanışlı, korunaklı ve ticari olarak verimli hale getiriyoruz.</h2>
-        </div>
-        <p>
-          Üretimden montaja kadar tek elden ilerleyen çalışma modeliyle, kullanım alanına uygun kumaş, taşıyıcı sistem ve bağlantı detaylarını birlikte planlıyoruz.
-        </p>
-      </section>
+    <section class="intro section" id="kurumsal">
+      <div class="section-kicker reveal">01 — Bizi tanıyın</div>
+      <div class="intro-grid"><h2 class="reveal">Mekâna değer katan<br><em>detaylar üretiyoruz.</em></h2><div class="intro-copy reveal"><p>Her projeyi ölçüsüne, kullanımına ve mimarisine göre ele alıyor; tasarımdan montaja kadar tek ekip olarak ilerliyoruz.</p><div class="stats"><div><strong>15+</strong><span>Yıllık deneyim</span></div><div><strong>450</strong><span>Tamamlanan proje</span></div><div><strong>7</strong><span>Çözüm grubu</span></div></div></div></div>
+    </section>
 
-      <section class="section solutions visual-solutions" id="cozumler" aria-labelledby="solutions-title">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Çözümlerimiz</p>
-          <h2 id="solutions-title">Dış mekân sistemleri</h2>
-        </div>
-        <div class="solution-grid">
-          <article class="solution-card" data-reveal>
-            <div class="solution-media tent-media" aria-hidden="true"></div>
-            <span class="solution-number">01</span>
-            <h3>Çadır Sistemleri</h3>
-            <p>Geçici veya kalıcı kapalı alan ihtiyaçları için proje bazlı çözümler.</p>
-            <ul>
-              <li>Özel ölçü imalat</li>
-              <li>Metal konstrüksiyon</li>
-              <li><a href="cadir.html">Detay sayfası</a></li>
-            </ul>
-          </article>
-          <article class="solution-card featured" data-reveal>
-            <div class="solution-media awning-media" aria-hidden="true"></div>
-            <span class="solution-number">02</span>
-            <h3>Tente Sistemleri</h3>
-            <p>Kafe, restoran, mağaza önü, teras ve balkonlar için modern gölgelendirme.</p>
-            <ul>
-              <li>Sabit ve açılır kapanır uygulamalar</li>
-              <li>Kumaş ve renk seçimi</li>
-              <li><a href="tente.html">Detay sayfası</a></li>
-            </ul>
-          </article>
-          <article class="solution-card" data-reveal>
-            <div class="solution-media gazebo-media" aria-hidden="true"></div>
-            <span class="solution-number">03</span>
-            <h3>Şemsiye &amp; Gazebo</h3>
-            <p>Açık oturma alanları, bahçeler ve ticari mekanlar için şık, dayanıklı ve pratik gölgelendirme.</p>
-            <ul>
-              <li>Merkezi ve yandan gövdeli şemsiye</li>
-              <li>Gazebo kurulumları</li>
-              <li><a href="gazebo.html">Detay sayfası</a></li>
-            </ul>
-          </article>
-          <article class="solution-card" data-reveal>
-            <div class="solution-media branda-media" aria-hidden="true"></div>
-            <span class="solution-number">04</span>
-            <h3>Branda Sistemleri</h3>
-            <p>Koruma, kapatma ve endüstriyel kullanım için ölçüye özel branda çözümleri.</p>
-            <ul>
-              <li>Kesim ve dikim</li>
-              <li>Dayanıklı kumaş seçenekleri</li>
-              <li><a href="branda.html">Detay sayfası</a></li>
-            </ul>
-          </article>
-          <article class="solution-card" data-reveal>
-            <div class="solution-media pergola-media" aria-hidden="true"></div>
-            <span class="solution-number">05</span>
-            <h3>Pergola Sistemleri</h3>
-            <p>Modern dış mekânlarda konforlu kullanım için mimari çizgide pergola uygulamaları.</p>
-            <ul>
-              <li>Modern taşıyıcı sistem</li>
-              <li>Cam kapatma uyumu</li>
-              <li><a href="pergola.html">Detay sayfası</a></li>
-            </ul>
-          </article>
-          <article class="solution-card" data-reveal>
-            <div class="solution-media semsiye-media" aria-hidden="true"></div>
-            <span class="solution-number">06</span>
-            <h3>Kamelya &amp; Kapatma</h3>
-            <p>Bahçe, teras ve ticari alanlarda dört mevsim kullanıma uygun özel projeler.</p>
-            <ul>
-              <li>Kış bahçesi</li>
-              <li>Özel proje uygulamaları</li>
-              <li><a href="semsiye.html">Detay sayfası</a></li>
-            </ul>
-          </article>
-        </div>
-      </section>
+    <section class="solutions section" id="cozumler">
+      <div class="section-head reveal"><div><p class="section-kicker">02 — Çözümlerimiz</p><h2>Her alan için<br><em>doğru sistem.</em></h2></div><p>Projeye, iklime ve kullanım biçimine göre tasarlanan uzun ömürlü dış mekân çözümleri.</p></div>
+      <div class="solution-grid">
+        <a class="solution-card wide reveal" href="/pergola/"><img src="https://images.unsplash.com/photo-1766087752966-b9a7b058b7da?auto=format&fit=crop&w=1500&q=85" alt="Modern bioklimatik pergola uygulaması"><span class="card-no">01</span><div><p>Pergola Sistemleri</p><span>Projeleri gör</span></div></a>
+        <a class="solution-card tall reveal" href="/tente/"><img src="https://images.unsplash.com/photo-1757004954260-c84525088f0d?auto=format&fit=crop&w=1200&q=85" alt="Kafe terası tente uygulaması"><span class="card-no">02</span><div><p>Tente Sistemleri</p><span>Projeleri gör</span></div></a>
+        <a class="solution-card reveal" href="/cadir/"><img src="https://images.unsplash.com/photo-1775476793931-cb484f197760?auto=format&fit=crop&w=1200&q=85" alt="Profesyonel etkinlik çadırı"><span class="card-no">03</span><div><p>Çadır Sistemleri</p><span>Projeleri gör</span></div></a>
+        <a class="solution-card reveal" href="/semsiye/"><img src="https://images.unsplash.com/photo-1689075326462-581d7705c0ef?auto=format&fit=crop&w=1200&q=85" alt="Teras şemsiye uygulaması"><span class="card-no">04</span><div><p>Şemsiye Sistemleri</p><span>Projeleri gör</span></div></a>
+        <a class="solution-card wide reveal" href="/gazebo/"><img src="https://images.unsplash.com/photo-1778315971381-5486ea47864c?auto=format&fit=crop&w=1500&q=85" alt="Bahçede modern gazebo"><span class="card-no">05</span><div><p>Gazebo & Kamelya</p><span>Projeleri gör</span></div></a>
+        <a class="solution-card reveal" href="/branda/"><img src="https://images.unsplash.com/photo-1763692514961-edb68b1bcddc?auto=format&fit=crop&w=1200&q=85" alt="Mimari branda gölgelendirme uygulaması"><span class="card-no">06</span><div><p>Branda Sistemleri</p><span>Projeleri gör</span></div></a>
+      </div>
+    </section>
 
-      <section class="section projects" id="projeler" aria-labelledby="projects-title">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Projelerimiz</p>
-          <h2 id="projects-title">Gerçek uygulama hissi veren büyük görsel vitrin.</h2>
-        </div>
-        <div class="project-masonry" data-reveal>
-          <a class="project-tile large" href="#galeri" style="--project-image: url('assets/premium-pergola-project.png')">
-            <span>Pergola &amp; Kapatma</span>
-            <strong>Premium teras uygulaması</strong>
-            <em>Projeyi İncele</em>
-          </a>
-          <a class="project-tile tall" href="#galeri" style="--project-image: url('assets/hero-krcbranda.png')">
-            <span>Şemsiye &amp; Gazebo</span>
-            <strong>Açık alan oturma çözümü</strong>
-            <em>Projeyi İncele</em>
-          </a>
-          <a class="project-tile" href="#galeri" style="--project-image: url('assets/workshop-detail.png')">
-            <span>Atölye</span>
-            <strong>Kumaş ve profil hazırlığı</strong>
-            <em>Projeyi İncele</em>
-          </a>
-          <a class="project-tile wide" href="#galeri" style="--project-image: url('assets/hero-krcbranda.png')">
-            <span>Tente</span>
-            <strong>Kafe &amp; restoran dış alanı</strong>
-            <em>Projeyi İncele</em>
-          </a>
-        </div>
-      </section>
+    <section class="projects section dark" id="projeler">
+      <div class="section-head reveal"><div><p class="section-kicker">03 — Seçili uygulamalar</p><h2>Fikirden gerçeğe<br><em>dönüşen mekânlar.</em></h2></div><p>Farklı ihtiyaçlara, mimarilere ve ölçeklere özel ürettiğimiz seçili projeler.</p></div>
+      <div class="editorial-grid">
+        <button class="project p1 reveal" data-index="0"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=88" alt="Villa terası pergola projesi"><span><b>Villa Teras / İstanbul</b><small>Pergola</small><i>Projeyi İncele</i></span></button>
+        <button class="project p2 reveal" data-index="1"><img src="https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?auto=format&fit=crop&w=1300&q=88" alt="Otel havuzu şemsiye projesi"><span><b>Sahil Oteli / Bodrum</b><small>Şemsiye</small><i>Projeyi İncele</i></span></button>
+        <button class="project p3 reveal" data-index="2"><img src="https://images.unsplash.com/photo-1559329145-afaf18e3f349?auto=format&fit=crop&w=1300&q=88" alt="Restoran terası tente projesi"><span><b>Restoran Terası / İzmir</b><small>Tente</small><i>Projeyi İncele</i></span></button>
+        <button class="project p4 reveal" data-index="3"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=88" alt="Kış bahçesi projesi"><span><b>Özel Konut / Bursa</b><small>Kış Bahçesi</small><i>Projeyi İncele</i></span></button>
+      </div>
+    </section>
 
-      <section class="section production" id="uretim" aria-labelledby="production-title">
-        <div class="production-copy" data-reveal>
-          <p class="eyebrow">Üretim yaklaşımı</p>
-          <h2 id="production-title">Her projede alan, kullanım yoğunluğu ve hava koşulları birlikte değerlendirilir.</h2>
-          <p>
-            Doğru branda çözümü sadece kumaştan ibaret değildir. Taşıyıcı sistemin rijitliği, bağlantı noktaları, su tahliyesi, rüzgar yükü ve günlük kullanım pratiği proje başında netleştirilir.
-          </p>
-          <figure class="production-image">
-            <img src="assets/workshop-detail.png" alt="Branda kumaşları, metal profiller ve montaj ekipmanları" loading="lazy" />
-          </figure>
-        </div>
-        <div class="production-list">
-          <div data-reveal>
-            <span>01</span>
-            <strong>Yerinde keşif</strong>
-            <p>Ölçü, zemin, cephe ve kullanım senaryosu incelenir.</p>
-          </div>
-          <div data-reveal>
-            <span>02</span>
-            <strong>Malzeme seçimi</strong>
-            <p>Kumaş, profil, bağlantı ve mekanizma seçenekleri belirlenir.</p>
-          </div>
-          <div data-reveal>
-            <span>03</span>
-            <strong>Atölye imalatı</strong>
-            <p>Ölçülere göre kesim, dikim ve konstrüksiyon hazırlığı yapılır.</p>
-          </div>
-          <div data-reveal>
-            <span>04</span>
-            <strong>Montaj ve teslim</strong>
-            <p>Sahada kurulum tamamlanır, kullanım detayları aktarılır.</p>
-          </div>
-        </div>
-      </section>
+    <section class="why section">
+      <div class="why-photo reveal"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1500&q=86" alt="Proje üzerinde çalışan mimarlar"><div class="material-tag"><b>Detaylarda kalite</b><span>Dayanıklı malzeme, temiz işçilik.</span></div></div>
+      <div class="why-content"><p class="section-kicker reveal">04 — Neden KRC?</p><h2 class="reveal">Ölçüden montaja,<br><em>tek ekip.</em></h2><div class="feature-list"><div class="reveal"><span>01</span><h3>Projeye özel tasarım</h3><p>Hazır kalıplar yerine alanınızın ihtiyaçlarına göre çizim ve üretim.</p></div><div class="reveal"><span>02</span><h3>Usta uygulama</h3><p>Deneyimli ekip, temiz montaj ve kontrollü teslim süreci.</p></div><div class="reveal"><span>03</span><h3>Uzun ömürlü sistemler</h3><p>Dış koşullara dayanıklı malzeme ve sürdürülebilir servis desteği.</p></div></div></div>
+    </section>
 
-      <section class="section process" id="surec" aria-labelledby="process-title">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Nasıl çalışırız?</p>
-          <h2 id="process-title">Net süreç, temiz montaj, uzun ömürlü kullanım.</h2>
-        </div>
-        <div class="process-strip" data-reveal>
-          <div>
-            <strong>Keşif</strong>
-            <span>İhtiyaç ve ölçüler alınır.</span>
-          </div>
-          <div>
-            <strong>Teklif</strong>
-            <span>Uygun sistem ve malzeme belirlenir.</span>
-          </div>
-          <div>
-            <strong>İmalat</strong>
-            <span>Atölyede projeye özel hazırlanır.</span>
-          </div>
-          <div>
-            <strong>Kurulum</strong>
-            <span>Montaj ekibi sahada teslim eder.</span>
-          </div>
-        </div>
-      </section>
+    <section class="gallery section" id="galeri">
+      <div class="section-head reveal"><div><p class="section-kicker">05 — Uygulama galerisi</p><h2>İşlerimizden<br><em>ilham alın.</em></h2></div></div>
+      <div class="filters" role="group" aria-label="Galeri filtreleri"><button class="active" data-filter="all">Tümü</button><button data-filter="pergola">Pergola</button><button data-filter="tente">Tente</button><button data-filter="cadir">Çadır</button><button data-filter="semsiye">Şemsiye</button></div>
+      <div class="gallery-grid">
+        <button class="gallery-item reveal" data-category="pergola" data-index="4"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=86" alt="Modern ev terası pergola uygulaması"><span>Pergola / Konut</span></button>
+        <button class="gallery-item reveal" data-category="tente" data-index="5"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=86" alt="Modern teras tente uygulaması"><span>Tente / Teras</span></button>
+        <button class="gallery-item reveal" data-category="semsiye" data-index="6"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=86" alt="Havuz başı şemsiye uygulaması"><span>Şemsiye / Otel</span></button>
+        <button class="gallery-item reveal" data-category="cadir" data-index="7"><img src="https://images.unsplash.com/photo-1475483768296-6163e08872a1?auto=format&fit=crop&w=1200&q=86" alt="Etkinlik çadırı uygulaması"><span>Çadır / Etkinlik</span></button>
+        <button class="gallery-item reveal" data-category="pergola" data-index="8"><img src="https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=1200&q=86" alt="Ahşap pergola ve oturma alanı"><span>Pergola / Bahçe</span></button>
+        <button class="gallery-item reveal" data-category="tente" data-index="9"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=86" alt="Teras kapatma ve tente uygulaması"><span>Tente / Restoran</span></button>
+        <button class="gallery-item reveal" data-category="semsiye" data-index="10"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=86" alt="Otel açık alan şemsiyeleri"><span>Şemsiye / Turizm</span></button>
+        <button class="gallery-item reveal" data-category="cadir" data-index="11"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=86" alt="Kurumsal etkinlik çadırı"><span>Çadır / Kurumsal</span></button>
+      </div>
+    </section>
 
-      <section class="section gallery-section" id="galeri" aria-labelledby="gallery-title">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Uygulama Galerisi</p>
-          <h2 id="gallery-title">Fotoğraf odaklı proje arşivi.</h2>
-        </div>
-        <div class="gallery-filters" aria-label="Galeri filtreleri" data-reveal>
-          <button type="button" class="is-active" data-filter="all">Tümü</button>
-          <button type="button" data-filter="cadir">Çadır</button>
-          <button type="button" data-filter="tente">Tente</button>
-          <button type="button" data-filter="branda">Branda</button>
-          <button type="button" data-filter="pergola">Pergola</button>
-          <button type="button" data-filter="gazebo">Gazebo</button>
-          <button type="button" data-filter="semsiye">Şemsiye</button>
-        </div>
-        <div class="gallery-grid" data-gallery data-reveal>
-          <button class="gallery-item" type="button" data-category="pergola" data-title="Pergola ve cam kapatma" data-src="assets/premium-pergola-project.png">
-            <img src="assets/premium-pergola-project.png" alt="Pergola ve cam kapatma uygulaması" loading="lazy" />
-          </button>
-          <button class="gallery-item" type="button" data-category="tente" data-title="Teras tente uygulaması" data-src="assets/hero-krcbranda.png">
-            <img src="assets/hero-krcbranda.png" alt="Teras tente uygulaması" loading="lazy" />
-          </button>
-          <button class="gallery-item" type="button" data-category="branda" data-title="Branda atölye hazırlığı" data-src="assets/workshop-detail.png">
-            <img src="assets/workshop-detail.png" alt="Branda kumaşı ve metal profil hazırlığı" loading="lazy" />
-          </button>
-          <button class="gallery-item" type="button" data-category="gazebo" data-title="Gazebo oturma alanı" data-src="assets/premium-pergola-project.png">
-            <img src="assets/premium-pergola-project.png" alt="Gazebo oturma alanı" loading="lazy" />
-          </button>
-          <button class="gallery-item" type="button" data-category="semsiye" data-title="Şemsiye gölgelendirme" data-src="assets/hero-krcbranda.png">
-            <img src="assets/hero-krcbranda.png" alt="Şemsiye gölgelendirme uygulaması" loading="lazy" />
-          </button>
-          <button class="gallery-item" type="button" data-category="cadir" data-title="Çadır sistem detayı" data-src="assets/workshop-detail.png">
-            <img src="assets/workshop-detail.png" alt="Çadır sistem malzeme detayı" loading="lazy" />
-          </button>
-        </div>
-      </section>
+    <section class="process section"><p class="section-kicker reveal">06 — Nasıl çalışıyoruz?</p><div class="process-grid"><div class="reveal"><span>01</span><h3>Keşif</h3><p>Alanı ve ihtiyacı birlikte değerlendiriyoruz.</p></div><div class="reveal"><span>02</span><h3>Projelendirme</h3><p>Ölçü, malzeme ve sistemi netleştiriyoruz.</p></div><div class="reveal"><span>03</span><h3>Üretim</h3><p>Projeyi kendi kalite standardımızla üretiyoruz.</p></div><div class="reveal"><span>04</span><h3>Montaj</h3><p>Temiz ve kontrollü bir teslim gerçekleştiriyoruz.</p></div></div></section>
 
-      <section class="cta" id="iletisim" aria-labelledby="contact-title">
-        <div data-reveal>
-          <p class="eyebrow">Teklif ve keşif</p>
-          <h2 id="contact-title">Projeniz için hızlıca görüşelim.</h2>
-          <p>
-            Alan ölçüsü, kullanım amacı ve istediğiniz ürün grubunu paylaşın; size uygun çözümü planlayalım.
-          </p>
-          <div class="contact-links">
-            <a href="tel:+905000000000">+90 500 000 00 00</a>
-            <a href="mailto:info@krcbranda.com">info@krcbranda.com</a>
-          </div>
-        </div>
-        <form class="contact-form" action="mailto:info@krcbranda.com" method="post" enctype="text/plain" data-reveal>
-          <label>
-            Ad Soyad
-            <input name="ad_soyad" autocomplete="name" required />
-          </label>
-          <label>
-            Telefon
-            <input name="telefon" autocomplete="tel" required />
-          </label>
-          <label>
-            İlgilendiğiniz çözüm
-            <select name="cozum">
-              <option>Çadır sistemleri</option>
-              <option>Tente sistemleri</option>
-              <option>Şemsiye &amp; gazebo</option>
-              <option>Bakım / onarım</option>
-            </select>
-          </label>
-          <label>
-            Kısa açıklama
-            <textarea name="mesaj" rows="4" placeholder="Alan ölçüsü, kullanım yeri veya ihtiyacınızı yazabilirsiniz."></textarea>
-          </label>
-          <button class="button primary" type="submit">Gönder</button>
-        </form>
-      </section>
-    </main>
+    <section class="cta" id="iletisim"><img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=2200&q=88" alt="Şık bir dış mekân yaşam alanı"><div></div><section class="reveal"><p class="eyebrow light">Yeni bir proje mi planlıyorsunuz?</p><h2>Alanınıza özel çözümü<br><em>birlikte tasarlayalım.</em></h2><p>Ölçü, kullanım amacı ve beklentinizi paylaşın; size uygun sistemi birlikte belirleyelim.</p><a class="btn gold" href="mailto:info@krcbranda.com">Projeniz için teklif alın</a></section></section>
+  </main>
 
-    <footer class="site-footer">
-      <img src="assets/krcbranda-logo-reverse.svg" alt="krcbranda" />
-      <p>Çadır, tente, şemsiye ve gazebo sistemlerinde imalat ve kurulum.</p>
-    </footer>
+  <footer><div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">K</span><span>KRC <b>BRANDA</b></span></a><p>Özel ölçü gölgelendirme ve dış mekân çözümleri.</p></div><div><h4>Çözümler</h4><a href="/pergola/">Pergola</a><a href="/tente/">Tente</a><a href="/cadir/">Çadır</a><a href="/branda/">Branda</a></div><div><h4>İletişim</h4><a href="tel:+902120000000">+90 (212) 000 00 00</a><a href="mailto:info@krcbranda.com">info@krcbranda.com</a><p>İstanbul, Türkiye</p></div><div><h4>Bizi takip edin</h4><a href="#">Instagram</a><a href="#">LinkedIn</a></div><small>© 2026 KRC Branda. Tüm hakları saklıdır.</small></footer>
 
-    <div class="lightbox" data-lightbox aria-hidden="true">
-      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Kapat">×</button>
-      <button class="lightbox-nav previous" type="button" data-lightbox-prev aria-label="Önceki görsel">‹</button>
-      <figure>
-        <img src="assets/hero-krcbranda.png" alt="" data-lightbox-image />
-        <figcaption data-lightbox-caption></figcaption>
-      </figure>
-      <button class="lightbox-nav next" type="button" data-lightbox-next aria-label="Sonraki görsel">›</button>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
+  <dialog class="lightbox"><button class="lb-close" aria-label="Kapat">×</button><button class="lb-prev" aria-label="Önceki görsel">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lb-next" aria-label="Sonraki görsel">›</button></dialog>
+  <script src="/assets/app.js"></script>
+</body>
 </html>
