@@ -1,6 +1,7 @@
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const menuButton = document.querySelector("[data-menu-button]");
+const revealItems = document.querySelectorAll("[data-reveal]");
 
 function updateHeader() {
   header.classList.toggle("is-scrolled", window.scrollY > 12);
@@ -26,3 +27,21 @@ nav.addEventListener("click", (event) => {
 
 window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
+
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+} else {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16, rootMargin: "0px 0px -60px" },
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+}
