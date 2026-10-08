@@ -78,7 +78,7 @@ const url = id => id.startsWith('/') ? id : `https://images.unsplash.com/${id}?a
 const fallbackGallery = p.asset ? [p.asset, ...IMG.slice(p.start + 1, p.start + 4)] : IMG.slice(p.start, p.start + 4);
 const galleryPics = p.gallery || fallbackGallery;
 
-document.title = `${p.title} | KRC Branda`;
+document.title = `${p.title} | KCR Branda`;
 document.getElementById('productTitle').innerHTML = p.title.replace(' Sistemleri', '<br><em>Sistemleri</em>');
 document.getElementById('productLead').textContent = p.lead;
 document.getElementById('productBody').textContent = p.body;
